@@ -1,0 +1,22 @@
+button {
+    cursor: pointer;
+   
+    border: 0;
+}
+.btn--feature {
+    background-color: var(--btx-title--color);
+    color: var(--second-title-color);
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+
+}
+.blue--btn {
+    margin-left: 0;
+}
+.button--current{
+    background-color:  var(--btx-title--color);
+    color: var(--second-title-color);
+}

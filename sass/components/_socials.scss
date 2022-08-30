@@ -1,0 +1,11 @@
+.team-soc__link, .socials__link{
+    display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 44px;
+            height: 44px;
+            border-radius: 50%;
+}
+.team-soc--color-light {
+    color: var(--soc--title--color)  ;
+}
