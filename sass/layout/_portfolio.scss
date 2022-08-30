@@ -82,7 +82,7 @@
             line-height: 1.6;
             letter-spacing: 0.03em;
             padding: 63px 24px;
-            background: rgba(33, 150, 243, 0.9);
+            background: var(--card--thumb--color);
             transform: translateY(101%);
             transition: transform 250ms linear;
     

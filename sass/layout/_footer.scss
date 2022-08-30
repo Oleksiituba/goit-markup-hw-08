@@ -46,7 +46,7 @@
             line-height: 1.71;
             letter-spacing: 0.03em;
             text-decoration: none;
-            color: rgba(255, 255, 255, 0.6);
+            color: var(--footer--title--color) ;
             
             transition-property: color;
             transition-duration: 250ms;
@@ -82,7 +82,7 @@
         &__link {
          
             color: var(--second-title-color);
-            background-color: rgba(255, 255, 255, 10%);
+            background-color:var(--footer--soc--color);
             transition-property: background-color;
             transition-duration: 250ms;
             transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -116,7 +116,7 @@
     height: 50px;
     width: 358px;
     background-color: var(--bgrd--title--color);
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    border: 1px solid var(--mailing--form--color);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
     padding: 15px;
@@ -133,14 +133,14 @@
             font-size: 16px;
             line-height: 1.25;
             letter-spacing: 0.03em;
-            color: rgba(255, 255, 255, 0.6);
+            color: var(--footer--title--color);
         }
 }
 .mailing-form__btn{
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 4px 4px var(--mailing-btn--color);
     padding: 10px 28px;
     margin-left: 12px;
 }

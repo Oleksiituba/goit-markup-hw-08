@@ -11,7 +11,7 @@
             background-size: 70px;
             background-repeat: no-repeat;
             background-position: center;
-            background-color: #F5F4FA;
+            background-color: var(--team--section--color);
             margin-bottom: 30px;
         }
          &:nth-child(1)::before {

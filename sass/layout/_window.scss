@@ -3,7 +3,7 @@
     width: 100vw;
     height: 100vh;
     top: 0;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: var(--backdrop--color--back);
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
         visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -28,7 +28,7 @@
     top: 10px;
     width: 30px;
     height: 30px;
-    border: 1px solid rgba(0, 0, 0, 0.1);
+    border: 1px solid var(--modal--color--back);
     border-radius: 50%;
     background-color: transparent;
     display: flex;
@@ -72,7 +72,7 @@
 .wrap__input {
     width: 100%;
     height: 40px;
-    border: 1px solid rgba(33, 33, 33, 0.2);
+    border: 1px solid var(--wrap--color--back);
     border-radius: 4px;
     padding-left: 42px;
     color: var(--first-title-color) ;
@@ -109,7 +109,7 @@
 .field-coment-text {
     width: 100%;
     height: 120px;
-    border: 1px solid rgba(33, 33, 33, 0.2);
+    border: 1px solid var(--wrap--color--back);
     border-radius: 4px;
     resize: none;
     padding: 10px;
@@ -177,7 +177,7 @@
 }
 .modal-button {
 
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 4px 4px rgba(38, 26, 26, 0.15);
     padding: 10px 52px;
     position: absolute;
     left: 165px;
