@@ -290,14 +290,34 @@ button {
   margin-left: auto;
   max-width: 1600px;
 }
+@media screen and (min-width: 480px) {
+  .name {
+    background-image: linear-gradient(var(--name--background--color), var(--name--background--color)), url(../img/work-mobile.jpg);
+  }
+}
+@media screen and (min-width: 480px) and (min-device-pixel-ratio: 2), screen and (min-width: 480px) and (min-resolution: 192dpi), screen and (min-width: 480px) and (min-resolution: 2dppx) {
+  .name {
+    background-image: linear-gradient(var(--name--background--color), var(--name--background--color)), url(../img/work-mobile-2x.jpg);
+  }
+}
 @media screen and (min-width: 768px) {
   .name {
     background-image: linear-gradient(var(--name--background--color), var(--name--background--color)), url(../img/work-tablet.jpg);
   }
 }
-@media screen and (min-width: 768px) and (min-width: 1200px) {
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .name {
+    background-image: linear-gradient(var(--name--background--color), var(--name--background--color)), url(../img/work-tablet-2x.jpg);
+  }
+}
+@media screen and (min-width: 1200px) {
   .name {
     background-image: linear-gradient(var(--name--background--color), var(--name--background--color)), url(../img/work.jpg);
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .name {
+    background-image: linear-gradient(var(--name--background--color), var(--name--background--color)), url(../img/work-2x.jpg);
   }
 }
 

@@ -18,20 +18,37 @@
                     var(--name--background--color),
                     var(--name--background--color)),
                     url(../img/work-mobile.jpg);
+                    @include retina {
+                            background-image: linear-gradient(var(--name--background--color),
+                                        var(--name--background--color)),
+                                    url(../img/work-mobile-2x.jpg);
+                        }
+                    }
         @include tablet{
             background-image: linear-gradient(
                 var(--name--background--color),
                 var(--name--background--color)),
                 url(../img/work-tablet.jpg);
+                @include retina{
+                        background-image: linear-gradient(var(--name--background--color),
+                                var(--name--background--color)),
+                            url(../img/work-tablet-2x.jpg);
+                    }
+                }
         @include desktop {
             background-image: linear-gradient(
                 var(--name--background--color),
                 var(--name--background--color)),
                 url(../img/work.jpg);
+                @include retina{
+                        background-image: linear-gradient(var(--name--background--color),
+                                var(--name--background--color)),
+                            url(../img/work-2x.jpg);
+                    }
         }       
     }
 
-}
+
 .container-name {
     padding-right: 237px;
     padding-left: 237px;
