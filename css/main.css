@@ -326,11 +326,23 @@ button {
 
 .peculiarity__list {
   display: flex;
-  column-gap: 30px;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
 .peculiarity__item {
+  width: 100%;
   flex-basis: calc((100% - 90px) / 4 - 30px);
+}
+@media screen and (min-width: 768px) {
+  .peculiarity__item {
+    max-width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .peculiarity__item {
+    max-width: calc((100% - 90px) / 4);
+  }
 }
 .peculiarity__item::before {
   display: block;
@@ -374,9 +386,8 @@ button {
 }
 
 .work__list {
-  list-style: none;
   display: flex;
-  column-gap: 30px;
+  gap: 30px;
 }
 
 .work-thumb {
@@ -414,7 +425,6 @@ button {
 
 .team__item {
   background-color: var(--second-title-color);
-  text-decoration: none;
   width: 100%;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
