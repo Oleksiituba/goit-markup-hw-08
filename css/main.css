@@ -157,12 +157,18 @@ button {
 }
 
 .title {
-  font-size: 36px;
-  line-height: 1.16;
+  font-size: 28px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--first-title-color);
   text-align: center;
   margin-bottom: 50px;
+}
+@media screen and (min-width: 1200px) {
+  .title {
+    font-size: 36px;
+    line-height: 1.16;
+  }
 }
 
 .section {
@@ -279,16 +285,17 @@ button {
 
 .name {
   background-color: var(--bgrd--title--color);
-  height: 600px;
+  height: 400px;
   text-align: center;
-  padding: 200px 0;
+  padding: 118px 0;
   background-image: linear-gradient(var(--name--background--color), var(--name--background--color)), url(../img/work-mobile.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   margin-right: auto;
   margin-left: auto;
-  max-width: 1600px;
+  padding: 118px 0;
+  max-width: 100%;
 }
 @media screen and (min-width: 480px) {
   .name {
@@ -312,6 +319,10 @@ button {
 }
 @media screen and (min-width: 1200px) {
   .name {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    max-width: 100%;
+    height: 600px;
     background-image: linear-gradient(var(--name--background--color), var(--name--background--color)), url(../img/work.jpg);
   }
 }
@@ -321,23 +332,38 @@ button {
   }
 }
 
-.container-name {
-  padding-right: 237px;
-  padding-left: 237px;
-}
-
 .name__text {
+  display: flex;
+  justify-content: center;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 22px;
+  line-height: 1.61;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--second-title-color);
   margin-bottom: 30px;
-  display: flex;
-  width: 696px;
   margin-right: auto;
   margin-left: auto;
+  max-width: 340px;
+}
+@media screen and (min-width: 480px) {
+  .name__text {
+    font-size: 26px;
+    max-width: 340px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .name__text {
+    font-size: 26px;
+    max-width: 340px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .name__text {
+    max-width: 600px;
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 
 .name_btn {
