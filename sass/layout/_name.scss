@@ -3,15 +3,33 @@
     height: 600px;
     text-align: center;
     padding: 200px 0;
-    background-image: linear-gradient(to right,
+    background-image: linear-gradient(
             var(--name--background--color),
-            var(--name--background--color)), url(../img/work.jpg);
+            var(--name--background--color)),
+             url(../img/work-mobile.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     margin-right: auto;
     margin-left: auto;
     max-width: 1600px;
+        @include mobile {
+                background-image: linear-gradient(
+                    var(--name--background--color),
+                    var(--name--background--color)),
+                    url(../img/work-mobile.jpg);
+        @include tablet{
+            background-image: linear-gradient(
+                var(--name--background--color),
+                var(--name--background--color)),
+                url(../img/work-tablet.jpg);
+        @include desktop {
+            background-image: linear-gradient(
+                var(--name--background--color),
+                var(--name--background--color)),
+                url(../img/work.jpg);
+        }       
+    }
 
 }
 .container-name {

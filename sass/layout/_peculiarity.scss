@@ -5,8 +5,8 @@
  }
  
  .peculiarity__item {
-   width: 100%;
-     flex-basis: calc((100% - 3 * 30px) / 4 - 30px);
+     width: 100%;
+    
      
         @media screen and (min-width: 768px) {
                 max-width: calc((100% - 30px) / 2);
@@ -14,7 +14,7 @@
             }
         
             @media screen and (min-width: 1200px) {
-                max-width: calc((100% - 90px) / 4);
+                max-width: calc((100% - 3 * 30px) / 4 - 30px);
         
             }
 
@@ -43,6 +43,7 @@
                  }
  }
  .peculiarity__title {
+    
      font-size: 14px;
      line-height: 1.14;
      letter-spacing: 0.03em;
