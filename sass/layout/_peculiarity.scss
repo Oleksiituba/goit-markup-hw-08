@@ -6,8 +6,7 @@
  
  .peculiarity__item {
      width: 100%;
-    
-     
+ 
         @media screen and (min-width: 768px) {
                 max-width: calc((100% - 30px) / 2);
         
@@ -15,7 +14,7 @@
         
             @media screen and (min-width: 1200px) {
                 max-width: calc((100% - 3 * 30px) / 4 - 30px);
-        
+       
             }
 
         &::before {
@@ -50,6 +49,7 @@
      text-transform: uppercase;
      color: var(--first-title-color);
      margin-bottom: 10px;
+    
 
 }
 
@@ -61,4 +61,7 @@
      color: var(--text-title--color);
      width: 270px;
      height: 75px;
+        @include mobile {
+                text-align: center;
+            }
  }

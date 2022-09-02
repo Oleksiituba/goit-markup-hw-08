@@ -360,7 +360,7 @@ button {
 }
 @media screen and (min-width: 1200px) {
   .name__text {
-    max-width: 600px;
+    max-width: 696px;
     font-size: 44px;
     line-height: 1.36;
   }
@@ -438,6 +438,11 @@ button {
   color: var(--text-title--color);
   width: 270px;
   height: 75px;
+}
+@media screen and (min-width: 480px) {
+  .peculiarity__text {
+    text-align: center;
+  }
 }
 
 .work__list {
@@ -538,7 +543,7 @@ button {
   gap: 30px;
 }
 .client-item {
-  width: 100%;
+  width: calc((100% - 30px) / 2);
   height: 92px;
 }
 @media screen and (min-width: 480px) {

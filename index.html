@@ -22,7 +22,7 @@
 <body>
      
                                      <!--Header-->
-    <!-- <header class="header">
+    <header class="header">
         <div class="container container-flex header--container">
             <a class="header__logo" lang="en" href="WebStudio"> <span class="logo__web web--color-btx">Web</span>Studio</a>
 
@@ -48,13 +48,14 @@
                         </svg> info@devstudio.com</a></li>
               </ul>
             </div>
+            <button class="menu-open" type="button" >0</button>
         </div>
-    </header> -->
+    </header>
 
                      <!-- Main-->
     <main>
             <!-- name section-->
-        <section class="name section name-section ">
+        <!-- <section class="name section name-section ">
             <div class="container container-name">
                 <h1 class="name__text">
                     Ефективні рішення для вашого бізнесу
@@ -62,9 +63,9 @@
 
                 <button class="name_btn btn--feature" type="button" data-modal-open>Замовити послугу</button>
             </div>
-        </section>
+        </section> -->
             <!-- peculiarity section-->
-        <section class="peculiarity section ">
+        <!-- <section class="peculiarity section ">
             <div class="container ">
                 <h2 hidden>наші особливості</h2>
                
@@ -101,7 +102,7 @@
                     </li>
                 </ul>
             </div>
-        </section>
+        </section> -->
         <!-- work section-->
         <!-- <section class="work section fithers">
             <div class="container">
@@ -141,15 +142,40 @@
             </div>
         </section> -->
             <!-- team section-->
-        <section class="team section ">
+        <!-- <section class="team section ">
             <div class="container  ">
                 <h2 class="team__title title">Наша команда</h2>
 
                 <ul class="team__list">
                     <li class="team__item">
                         <article class="card-team">
-
-                            <img class="card-team__img" src="./img/teamcard1.jpg" alt="Product Designer" width="270" />
+                          <picture>
+                            <source  
+                            srcset="
+                                 ./img/teamcard1.jpg 1x,
+                                 ./img/teamcard1-2x.jpg 2x
+                                 "
+                                 media="(min-width: 1200px)"
+                                 />
+                                <source srcset="
+                                ./img/teamcard1-tab.jpg 1x,
+                                ./img/teamcard1-tab-2x.jpg 2x
+                                  " 
+                                  media="(min-width: 768px)"
+                                  />
+                                <source srcset="
+                                 ./img/teamcard1-mob.jpg 1x,
+                                 ./img/teamcard1-mob-2x.jpg 2x
+                                  " 
+                                  media="(max-width: 767px)"
+                                  />
+                                <img 
+                                  class="card-team__img"
+                                   src="./img/teamcard1.jpg"
+                                    alt="Product Designer"
+                                    />
+                          </picture>
+                            
 
                             <div class="content-team">
                                 <h3 class="content-team__title">Ігор Дем'яненко</h3>
@@ -190,9 +216,24 @@
 
                     <li class="team__item">
                         <article class="card-team">
-
-                            <img class="card-team__img" src="./img/teamcard2.jpg" alt="Frontend Developer" width="270" />
-
+                          <picture>
+                           <source srcset="
+                                 ./img/teamcard2.jpg 1x,
+                                 ./img/teamcard2-2x.jpg 2x
+                                 " media="(min-width: 1200px)" />
+                             <source srcset="
+                                ./img/teamcard2-tab.jpg 1x,
+                                ./img/teamcard2-tab-2x.jpg 2x
+                                  " media="(min-width: 768px)" />
+                             <source srcset="
+                                 ./img/teamcard2-mob.jpg 1x,
+                                 ./img/teamcard2-mob-2x.jpg 2x
+                                  " media="(max-width: 767px)" />
+                                 <img 
+                                 class="card-team__img"
+                                  src="./img/teamcard2.jpg" 
+                                  alt="Product Designer" />
+                                </picture>
                             <div class="content-team">
                                 <h3 class="content-team__title">Ольга Рєпіна</h3>
                                 <p class="content-team__text" lang="en">Frontend Developer</p>
@@ -233,8 +274,24 @@
                 <li class="team__item">
                     <article class="card-team">
                 
-                        <img class="card-team__img" src="./img/teamcard3.jpg" alt="Frontend Developer" width="270" />
-                
+                        <picture>
+                            <source srcset="
+                             ./img/teamcard3.jpg 1x,
+                             ./img/teamcard3-2x.jpg 2x
+                             " media="(min-width: 1200px)" />
+                            <source srcset="
+                              ./img/teamcard3-tab.jpg 1x,
+                              ./img/teamcard3-tab-2x.jpg 2x
+                                " media="(min-width: 768px)" />
+                            <source srcset="
+                             ./img/teamcard3-mob.jpg 1x,
+                             ./img/teamcard3-mob-2x.jpg 2x
+                              " media="(max-width: 767px)" />
+                            <img 
+                            class="card-team__img" 
+                            src="./img/teamcard3.jpg" 
+                            alt="Product Designer" />
+                        </picture>
                         <div class="content-team">
                             <h3 class="content-team__title">Микола Тарасов</h3>
                             <p class="content-team__text" lang="en">Marketing</p>
@@ -275,7 +332,24 @@
                     <li class="team__item">
                         <article class="card-team">
                     
-                            <img class="card-team__img" src="./img/teamcard4.jpg" alt="Frontend Developer" width="270" />
+                            <picture>
+                                <source srcset="
+                                ./img/teamcard4.jpg 1x,
+                                ./img/teamcard4-2x.jpg 2x
+                                " media="(min-width: 1200px)" />
+                                <source srcset="
+                                 ./img/teamcard4-tab.jpg 1x,
+                                 ./img/teamcard4-tab-2x.jpg 2x
+                                   " media="(min-width: 768px)" />
+                                <source srcset="
+                                  ./img/teamcard4-mob.jpg 1x,
+                                  ./img/teamcard4-mob-2x.jpg 2x
+                                   " media="(max-width: 767px)" />
+                                <img 
+                                class="card-team__img" 
+                                src="./img/teamcard4.jpg"
+                                 alt="Product Designer" />
+                            </picture>
                     
                             <div class="content-team">
                                 <h3 class="content-team__title">Михайло Єрмаков</h3>
@@ -313,11 +387,9 @@
                             </div>
                         </article>
                     </li>
-
-
                 </ul>
             </div>
-        </section>
+        </section> -->
             <!-- client section-->
         <!-- <section class="client section ">
             <div class="container">
@@ -365,9 +437,6 @@
                             </svg>
                         </a>
                     </li>
-
-
-
                 </ul>
             </div>
         </section> -->

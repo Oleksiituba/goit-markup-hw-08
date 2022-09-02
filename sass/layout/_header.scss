@@ -17,8 +17,8 @@
 }
 
 .navigation__list {
-    list-style: none;
     display: flex;
+    display: none;
 }
 .navigation__item:not(:last-child) {
     margin-right: 50px;
@@ -43,6 +43,7 @@
 .current {
     color: var(--btx-title--color);
     position: relative;
+    display: none;
      &::after {
             position: absolute;
             content: "";
@@ -56,6 +57,7 @@
 }
 .connect{
 margin-left: auto; 
+display: none;
 
     &__list {
 
