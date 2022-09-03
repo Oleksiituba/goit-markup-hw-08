@@ -3,41 +3,42 @@
 }
 .port-btn {
     display: flex;
-    justify-content: center;
+    justify-content: left;
     flex-wrap: wrap;
+
      gap: 15px 8px;
     margin-bottom: 40px;
-   
+
+        
      
-    @media screen and (min-width: 768px) {
-            margin-bottom: 30px;;
+        @include tablet {
+            justify-content: center;
+            margin-bottom: 30px;
+            gap:  8px;
     
         }
     
-        @media screen and (min-width: 1200px) {
-            margin-bottom: 50px;;
+         @include desktop {
+            justify-content: center;
+        margin-bottom: 50px;
+            gap: 8px;
+        
+      }
+    }
     
-        }
-}
-
-
-    
-    
-
-
 .port-btn__link {
     display: flex;
+    text-align: center;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
     letter-spacing: 0.03em;
     color: var(--first-title-color);
     background: var(--team--section--color);
-    text-align: center;
     border-radius: 4px;
     padding: 6px 22px;
     border: 0;
-    cursor: pointer;
+    width: 100%;
     transition-property: background-color, color, box-shadow;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -61,12 +62,12 @@
 }
 .menu-project__item{
    width: 100%;
-    @media screen and (min-width: 768px) {
+    @include tablet {
             max-width: calc((100% - 30px) / 2);
     
         }
     
-        @media screen and (min-width: 1200px) {
+    @include desktop{
             max-width: calc((100% - 60px) / 3);
     
         }
@@ -134,6 +135,5 @@
             letter-spacing: 0.03em;
             color: var(--text-title--color);
             margin-top: 4px;
-        }
-}
-
+       }
+    }

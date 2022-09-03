@@ -1,19 +1,19 @@
  .peculiarity__list{
      display: flex;
      justify-content: center;
-    flex-wrap: wrap;
+     flex-wrap: wrap;
      gap: 30px;
  }
  
  .peculiarity__item {
      width: 100%;
  
-        @media screen and (min-width: 768px) {
+        @include tablet{
                 max-width: calc((100% - 30px) / 2);
         
             }
         
-            @media screen and (min-width: 1200px) {
+        @include desktop{
                 max-width: calc((100% - 3 * 30px) / 4 - 30px);
             }
 
@@ -50,24 +50,32 @@
      color: var(--first-title-color);
      margin-bottom: 10px;
      text-align: center;
+    @include mobile {
+            text-align: center;
+        }
     @include tablet {
+            text-align: left;
+        }
+    @include desktop {
             text-align: left;
         }
 
 }
 
- 
  .peculiarity__text {
      font-size: 14px;
      line-height: 1.71;
      letter-spacing: 0.03em;
      color: var(--text-title--color);
-    //  width: 270px;
      height: 75px;
-
-
-    text-align: left;
+     text-align: left;
+    @include mobile {
+        text-align: left;
+        }
     @include tablet{
+        text-align: left;
+    }
+    @include desktop {
         text-align: left;
     }
            

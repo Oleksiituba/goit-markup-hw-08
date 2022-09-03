@@ -106,18 +106,6 @@ body {
   }
 }
 
-.header--container {
-  display: flex;
-  align-items: baseline;
-}
-
-.container--footer {
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 button {
   cursor: pointer;
   border: 0;
@@ -197,12 +185,16 @@ button {
 .header {
   border-bottom: 1px solid var(--header--border--color);
 }
+.header .header--container {
+  display: flex;
+  align-items: baseline;
+}
 
 .header__logo {
   font-family: "Raleway";
   font-weight: 700;
   font-size: 26px;
-  line-height: 1.19;
+  line-height: 1.1666666667;
   letter-spacing: 0.03em;
   list-style: none;
   text-decoration: none;
@@ -211,10 +203,23 @@ button {
   padding-bottom: 25px;
   margin-right: 93px;
 }
+@media screen and (min-width: 1200px) {
+  .header__logo {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+  }
+}
 
 .navigation__list {
   display: flex;
   display: none;
+}
+@media screen and (min-width: 768px) {
+  .navigation__list {
+    display: flex;
+  }
 }
 
 .navigation__item:not(:last-child) {
@@ -243,6 +248,11 @@ button {
   position: relative;
   display: none;
 }
+@media screen and (min-width: 768px) {
+  .current {
+    display: flex;
+  }
+}
 .current::after {
   position: absolute;
   content: "";
@@ -258,6 +268,11 @@ button {
   margin-left: auto;
   display: none;
 }
+@media screen and (min-width: 768px) {
+  .connect {
+    display: flex;
+  }
+}
 .connect__list {
   display: flex;
   align-items: center;
@@ -265,8 +280,8 @@ button {
 }
 .connect__link {
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+  font-size: 12px;
+  line-height: 1.1666666667;
   letter-spacing: 0.02em;
   list-style: none;
   text-decoration: none;
@@ -282,9 +297,141 @@ button {
 .connect__link:hover, .connect__link:focus {
   color: var(--btx-title--color);
 }
+@media screen and (min-width: 1200px) {
+  .connect__link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+  }
+}
 .connect__icon {
   fill: currentColor;
   margin-right: 10px;
+}
+
+.menu-open {
+  margin-left: auto;
+  display: inline-flex;
+  background-color: var(--second-title-color);
+}
+.menu-open__icon {
+  fill: var(--logo--title--color);
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.menu-open__icon:hover, .menu-open__icon:focus {
+  fill: var(--btx-title--color);
+}
+@media screen and (min-width: 768px) {
+  .menu-open {
+    visibility: hidden;
+  }
+}
+
+.mob-menu {
+  position: fixed;
+  z-index: 2;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--second-title-color);
+  top: 0;
+  padding-top: 48px;
+  padding-bottom: 48px;
+  padding-left: 40px;
+}
+.mob-menu > .container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+  overflow: auto;
+}
+
+.menu-close {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid var(--modal--color--back);
+  margin-bottom: 8px;
+  border-radius: 50%;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(-logo--title--color);
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.menu-close:hover, .menu-close:focus {
+  color: var(--btx-color--bg);
+}
+
+.mob-menu__icon {
+  fill: currentColor;
+}
+
+.mob-menu__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.mob-menu__link {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: var(--first-title-color);
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mob-menu__link:hover, .mob-menu__link:focus {
+  color: var(--btx-color--bg);
+}
+
+.menu-connect {
+  margin-bottom: 64px;
+}
+
+.menu-connect-tell {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.1764705882;
+  letter-spacing: 0.02em;
+  color: var(--btx-color--bg);
+  margin-bottom: 32px;
+  padding: 16px 0;
+}
+
+.menu-connect-mail {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.1666666667;
+  letter-spacing: 0.02em;
+  color: var(--text-title--color);
+}
+
+.menu-soc__list {
+  display: flex;
+  justify-content: left;
+}
+
+.menu-soc__item:not(:last-child) {
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+.menu-soc__link {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.2222222222;
+  letter-spacing: 0.02em;
+  color: var(--btx-color--bg);
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .name {
@@ -436,7 +583,17 @@ button {
   margin-bottom: 10px;
   text-align: center;
 }
+@media screen and (min-width: 480px) {
+  .peculiarity__title {
+    text-align: center;
+  }
+}
 @media screen and (min-width: 768px) {
+  .peculiarity__title {
+    text-align: left;
+  }
+}
+@media screen and (min-width: 1200px) {
   .peculiarity__title {
     text-align: left;
   }
@@ -450,7 +607,17 @@ button {
   height: 75px;
   text-align: left;
 }
+@media screen and (min-width: 480px) {
+  .peculiarity__text {
+    text-align: left;
+  }
+}
 @media screen and (min-width: 768px) {
+  .peculiarity__text {
+    text-align: left;
+  }
+}
+@media screen and (min-width: 1200px) {
   .peculiarity__text {
     text-align: left;
   }
@@ -731,35 +898,39 @@ button {
 
 .port-btn {
   display: flex;
-  justify-content: center;
+  justify-content: left;
   flex-wrap: wrap;
   gap: 15px 8px;
   margin-bottom: 40px;
 }
 @media screen and (min-width: 768px) {
   .port-btn {
+    justify-content: center;
     margin-bottom: 30px;
+    gap: 8px;
   }
 }
 @media screen and (min-width: 1200px) {
   .port-btn {
+    justify-content: center;
     margin-bottom: 50px;
+    gap: 8px;
   }
 }
 
 .port-btn__link {
   display: flex;
+  text-align: center;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   letter-spacing: 0.03em;
   color: var(--first-title-color);
   background: var(--team--section--color);
-  text-align: center;
   border-radius: 4px;
   padding: 6px 22px;
   border: 0;
-  cursor: pointer;
+  width: 100%;
   transition-property: background-color, color, box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);

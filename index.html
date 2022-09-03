@@ -42,13 +42,87 @@
                         </svg> +38 096 111 11 11</a>
                  </li>
 
-                 <li class="header-links-contact"><a class="connect__link link_mail"
+                 <li class="connect__item"><a class="connect__link link_mail"
                         href="mail:info@devstudio.com"> <svg class="connect__icon" width="16" height="16">
                             <use href="./img/symbol.svg#icon-tell"></use>
                         </svg> info@devstudio.com</a></li>
               </ul>
             </div>
-            <button class="menu-open" type="button" >0</button>
+            <button class="menu-open" type="button" >
+                <svg class="menu-open__icon" width="40" height="40">
+                    <use href="./img/symbol.svg#icon-menu-1"></use>
+                </svg>
+            </button>
+        </div>
+                    <!--Mob--menu-->
+        <div class="mob-menu">
+           <div class="container">
+            <div class="mob-menu-top">
+<button type="button" class="menu-close" data-mob-menu__close>
+    <svg class="mob-menu__icon" width="18" height="18">
+        <use href="./img/symbol.svg#icon-close-black"></use>
+    </svg>
+</button>
+<nav class="mob-menu__nav">
+    <ul class="mob-menu__list list">
+        <li class="mob-menu__item"> <a href="index.html" class="mob-menu__link">Студія</a></li>
+        <li class="mob-menu__item"> <a href="portfolio.html" class="mob-menu__link">Портфоліо</a></li>
+        <li class="mob-menu__item"> <a class="mob-menu__link" href="">Контакти</a></li>
+    </ul>
+</nav>
+</div>
+<div class="mob-menu-bottom">
+<div class="menu-connect header__connect">
+    <ul class="menu-connect__list">
+        <li class="menu-connect__item">
+            <a class="menu-connect-tell"
+             href="tell:+380961111111">+38 096 111 11 11</a>
+        </li>
+
+        <li class="menu-connect__item"><a class="menu-connect-mail"
+             href="mail:info@devstudio.com">info@devstudio.com</a>
+            </li>
+            </ul>
+            </div>
+   <div class="menu-soc">
+  <ul class="menu-soc__list">
+<li class="menu-soc__item">
+    <a 
+     href=""
+     target="_blank"
+     rel="noopener noreferrer nofollow"
+     class="menu-soc__link">
+        Instagram
+    </a>
+</li>
+<li class="menu-soc__item">
+    <a  href=""
+     target="_blank"
+     rel="noopener noreferrer nofollow"
+     class="menu-soc__link">
+        Twitter
+    </a>
+</li>
+<li class="menu-soc__item">
+    <a  href=""
+     target="_blank"
+     rel="noopener noreferrer nofollow"
+     class="menu-soc__link">
+        Facebook
+    </a>
+</li>
+<li class="menu-soc__item">
+    <a  href=""
+     target="_blank"
+     rel="noopener noreferrer nofollow"
+     class="menu-soc__link">
+        LinkedIn
+    </a>
+</li>
+    </ul>
+    </div>
+    </div>
+    </div>
         </div>
     </header>
 
@@ -65,7 +139,7 @@
             </div>
         </section> -->
             <!-- peculiarity section-->
-        <section class="peculiarity section ">
+        <!-- <section class="peculiarity section ">
             <div class="container ">
                 <h2 hidden>наші особливості</h2>
                
@@ -102,7 +176,7 @@
                     </li>
                 </ul>
             </div>
-        </section>
+        </section> -->
         <!-- work section-->
         <!-- <section class="work section fithers">
             <div class="container">
@@ -572,6 +646,7 @@
         </div>
     </div> -->
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
 </body>
 
 </html>
