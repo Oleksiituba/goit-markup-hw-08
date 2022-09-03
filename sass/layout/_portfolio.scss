@@ -48,7 +48,10 @@
     
         }
 }
-
+.button--current {
+    background-color: var(--btx-title--color);
+    color: var(--second-title-color);
+}
 
 .menu-project {
    
