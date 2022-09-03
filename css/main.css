@@ -106,7 +106,12 @@ body {
   }
 }
 
-.container--footer, .header--container {
+.header--container {
+  display: flex;
+  align-items: baseline;
+}
+
+.container--footer {
   display: flex;
   align-items: baseline;
 }
@@ -211,8 +216,8 @@ button {
 }
 
 .navigation__list {
-  list-style: none;
   display: flex;
+  display: none;
 }
 
 .navigation__item:not(:last-child) {
@@ -239,6 +244,7 @@ button {
 .current {
   color: var(--btx-title--color);
   position: relative;
+  display: none;
 }
 .current::after {
   position: absolute;
@@ -253,6 +259,7 @@ button {
 
 .connect {
   margin-left: auto;
+  display: none;
 }
 .connect__list {
   display: flex;

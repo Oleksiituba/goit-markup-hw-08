@@ -16,8 +16,13 @@
 
  }
 }
-.container--footer, .header--container {
+.header--container {
     display: flex;
     align-items: baseline;
 }
+.container--footer{
+        display: flex;
+        align-items: baseline;
+        
+    }
 
