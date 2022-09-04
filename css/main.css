@@ -589,7 +589,7 @@ button {
 }
 @media screen and (min-width: 1200px) {
   .peculiarity__item {
-    max-width: calc((100% - 90px) / 4 - 30px);
+    max-width: calc((100% - 90px) / 4);
   }
 }
 .peculiarity__item::before {

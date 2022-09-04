@@ -14,7 +14,7 @@
             }
         
         @include desktop{
-                max-width: calc((100% - 3 * 30px) / 4 - 30px);
+                max-width: calc((100% - 90px) / 4 );
             }
 
         &::before {
