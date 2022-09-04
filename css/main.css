@@ -955,7 +955,7 @@ button {
 
 .mailing-form__input {
   height: 50px;
-  width: 358px;
+  width: 300px;
   background-color: var(--bgrd--title--color);
   border: 1px solid var(--mailing--form--color);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -970,6 +970,11 @@ button {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   margin-bottom: 20px;
+}
+@media screen and (min-width: 480px) {
+  .mailing-form__input {
+    width: 450px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .mailing-form__input {
@@ -1142,7 +1147,7 @@ button {
 
 .modal {
   background-color: var(--second-title-color);
-  width: 450px;
+  width: 400px;
   min-height: 609px;
   border-radius: 4px;
   position: absolute;
@@ -1151,6 +1156,12 @@ button {
   transform: translate(-50%, -50%) scale(1) rotate(0);
   transition: transform 250ms cubic-bezier(0.57, 0.57, 1, 0.92);
   padding: 40px;
+}
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 450px;
+    min-height: 609px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .modal {
@@ -1286,7 +1297,7 @@ button {
 
 .check {
   font-weight: 400;
-  font-size: 12px;
+  font-size: 10px;
   line-height: 1;
   letter-spacing: 0.03em;
   color: var(--text-title--color);
@@ -1295,6 +1306,12 @@ button {
   justify-content: center;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 480px) {
+  .check {
+    font-size: 12px;
+    line-height: 1;
+  }
 }
 @media screen and (min-width: 1200px) {
   .check {

@@ -9,7 +9,7 @@
 }
 .modal {
     background-color: var(--second-title-color);
-    width: 450px;
+    width: 400px;
     min-height: 609px;
     border-radius: 4px;
     position: absolute;
@@ -18,6 +18,10 @@
     transform: translate(-50%, -50%) scale(1) rotate(0);
     transition: transform 250ms cubic-bezier(.57, .57, 1, .92);
     padding: 40px;
+    @include mobile {
+        width: 450px;
+            min-height: 609px;
+    }
     @include desktop {
         width: 528px;
             min-height: 581px;
@@ -146,7 +150,7 @@
 
 .check {
     font-weight: 400;
-    font-size: 12px;
+    font-size: 10px;
     line-height: 1;
     letter-spacing: 0.03em;
     color: var(--text-title--color);
@@ -155,6 +159,10 @@
     justify-content: center;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+   @include mobile {
+    font-size: 12px;
+        line-height: 1;
+   }
     @include desktop {
         font-size: 14px;
             line-height: 1;

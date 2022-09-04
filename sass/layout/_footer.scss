@@ -151,7 +151,7 @@ margin-bottom: 60px;
 
 .mailing-form__input {
     height: 50px;
-    width: 358px;
+    width: 300px;
     background-color: var(--bgrd--title--color);
     border: 1px solid var(--mailing--form--color);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -166,6 +166,9 @@ margin-bottom: 60px;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     margin-bottom: 20px;
+    @include mobile{
+        width: 450px;
+    }
     @include desktop {
         width: 358px;
     }
