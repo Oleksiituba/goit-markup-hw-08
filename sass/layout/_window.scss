@@ -9,7 +9,7 @@
 }
 .modal {
     background-color: var(--second-title-color);
-    width: 400px;
+    width: 320px;
     min-height: 609px;
     border-radius: 4px;
     position: absolute;
@@ -150,7 +150,7 @@
 
 .check {
     font-weight: 400;
-    font-size: 10px;
+    font-size: 7px;
     line-height: 1;
     letter-spacing: 0.03em;
     color: var(--text-title--color);
@@ -200,7 +200,11 @@
     box-shadow: 0px 4px 4px rgba(38, 26, 26, 0.15);
     padding: 10px 52px;
     position: absolute;
+    left: 60px;
+    @include mobile {
     left: 125px;
+
+    }
     @include desktop {
         left: 165px;
     }

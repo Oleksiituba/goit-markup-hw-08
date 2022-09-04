@@ -554,7 +554,7 @@ button {
   .name__text {
     max-width: 696px;
     font-size: 44px;
-    line-height: 1.36;
+    line-height: 1.3636363636;
   }
 }
 
@@ -1147,7 +1147,7 @@ button {
 
 .modal {
   background-color: var(--second-title-color);
-  width: 400px;
+  width: 320px;
   min-height: 609px;
   border-radius: 4px;
   position: absolute;
@@ -1297,7 +1297,7 @@ button {
 
 .check {
   font-weight: 400;
-  font-size: 10px;
+  font-size: 7px;
   line-height: 1;
   letter-spacing: 0.03em;
   color: var(--text-title--color);
@@ -1352,7 +1352,12 @@ button {
   box-shadow: 0px 4px 4px rgba(38, 26, 26, 0.15);
   padding: 10px 52px;
   position: absolute;
-  left: 125px;
+  left: 60px;
+}
+@media screen and (min-width: 480px) {
+  .modal-button {
+    left: 125px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .modal-button {

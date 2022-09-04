@@ -60,7 +60,6 @@
 .name__text{
     display: flex;
     justify-content: center;
-
     font-weight: 900;
     font-size: 22px;
     line-height: 1.61;
@@ -82,7 +81,7 @@
     @include desktop {
         max-width: 696px;
         font-size: 44px;
-         line-height: 1.36;
+         line-height: calc(60 / 44);
     }
 }
 .name_btn {
