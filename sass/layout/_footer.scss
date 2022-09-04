@@ -2,8 +2,31 @@
     background-color: var(--bgrd--title--color);
     padding: 60px 0;
 }
-
-
+.container--footer{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+        @include tablet {
+            flex-wrap: wrap;
+            flex-direction: row;
+            align-items: baseline;
+            
+        }
+        @include desktop{
+            flex-wrap: nowrap;
+            text-align: start;
+                    display: flex;
+                    align-items: baseline;
+                
+        }
+}
+.contacts{
+    margin-bottom: 60px;
+    @include tablet {
+        flex-basis: 50%;
+    }
+    @include desktop
+}
 .contacts__web-studio {
     font-family: 'Raleway';
     font-weight: 700;
@@ -18,20 +41,16 @@
     font-style: normal;
     margin-top: 20px ;
 
-
-        
- 
         &__link-maps {
             font-size: 14px;
             line-height: 1.71;
             letter-spacing: 0.03em;
             text-decoration: none;
             color: var(--second-title-color);
-         
             transition-property: color;
             transition-duration: 250ms;
             transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    
+            
             &:hover,
             &:focus {
                 color: var(--btx-title--color);
@@ -59,11 +78,16 @@
         }
 }
 
-.socials{
+.socials
+{  display: flex;
     align-items: center;
-    justify-content: center;
-    margin-left: 70px;
-
+    flex-direction: column;
+margin-bottom: 60px;
+    @include tablet {
+        flex-basis: 50%;
+        
+        
+    }
     &__info {
             font-size: 14px;
             line-height: 1.14;
@@ -99,8 +123,21 @@
 }
 
 .mailing {
-    margin-left: auto;
-
+    margin: auto;
+    @include tablet {
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+        flex-basis: 50%;
+        margin: auto;
+        
+     
+    }
+        @include desktop{
+            flex-basis: 100%;
+            margin: 0;
+            
+        }
     &__info {
             font-size: 14px;
             line-height: 1.14;
@@ -128,6 +165,11 @@
     transition-property: border-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    margin-bottom: 20px;
+    @include desktop {
+        width: 358px;
+    }
+
      &::placeholder {
             font-weight: 400;
             font-size: 16px;

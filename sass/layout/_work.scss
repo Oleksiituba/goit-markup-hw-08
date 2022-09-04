@@ -1,4 +1,10 @@
 
+.work{
+    display: none;
+    @include desktop{
+        display: inline;
+    }
+}
 .work__list {
     display: flex;
     gap: 30px;

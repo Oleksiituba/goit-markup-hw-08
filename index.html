@@ -54,7 +54,7 @@
                 </svg>
             </button>
         </div>
-                    <!--Mob--menu-->
+                    <!--Mob menu-->
         <div class="mob-menu is-hidden">
            <div class="container">
             <div class="mob-menu-top">
@@ -129,7 +129,7 @@
                      <!-- Main-->
     <main>
             <!-- name section-->
-        <!-- <section class="name section name-section ">
+        <section class="name section name-section ">
             <div class="container container-name">
                 <h1 class="name__text">
                     Ефективні рішення для вашого бізнесу
@@ -137,9 +137,9 @@
 
                 <button class="name_btn btn--feature" type="button" data-modal-open>Замовити послугу</button>
             </div>
-        </section> -->
+        </section>
             <!-- peculiarity section-->
-        <!-- <section class="peculiarity section ">
+        <section class="peculiarity section ">
             <div class="container ">
                 <h2 hidden>наші особливості</h2>
                
@@ -172,20 +172,26 @@
                         <h3 class="peculiarity__title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
                         <p class="peculiarity__text">Значимість цих проблем настільки очевидна, що реалізація планових
                             завдань.</p>
-                            </div>
+                        
                     </li>
                 </ul>
             </div>
-        </section> -->
+        </section>
         <!-- work section-->
-        <!-- <section class="work section fithers">
+        <section class="work section fithers">
             <div class="container">
                 <h2 class="work__title title">Чим ми займаємося</h2>
                 <ul class="work__list">
                     <li class="work__item">
                         <div class="work-thumb">
-                            <img class="work-thumb__visual" src="./img/box1.jpg" alt="розробка програмного забезпечення"
-                                width="370" height="294" />
+                        <picture>
+                            <source srcset="
+                                                         ./img/box1.jpg 1x,
+                                                         ./img/box1-2x.jpg 2x
+                                                         " media="(min-width: 1200px)" />
+                       
+                            <img class="card-team__img" src="./img/box1.jpg" alt="розробка програмного забезпечення" />
+                        </picture>
                             <p class="work-thumb__content">
                                 Десктопні додатки
                             </p>
@@ -194,8 +200,14 @@
 
                     <li class="work__item">
                         <div class="work-thumb">
-                            <img class="work-thumb__visual" src="./img/box2.jpg" alt="тестування мобільного додатку"
-                                width="370" height="294" />
+                            <picture>
+                                <source srcset="
+                                          ./img/box2.jpg 1x,
+                                          ./img/box2-2x.jpg 2x
+                                          " media="(min-width: 1200px)" />
+
+                                <img class="card-team__img" src="./img/box2.jpg" alt="тестування мобільного додатку" />
+                            </picture>
                             <p class="work-thumb__content">
                                 Мобільні додатки
                             </p>
@@ -204,8 +216,14 @@
 
                     <li class="work__item">
                         <div class="work-thumb">
-                            <img class="work-thumb__visual" src="./img/box3.jpg" alt="робота з палітрою кольорів"
-                                width="370" height="294" />
+                        <picture>
+                            <source srcset="
+                                                                                 ./img/box3.jpg 1x,
+                                                                                 ./img/box3-2x.jpg 2x
+                                                                                 " media="(min-width: 1200px)" />
+                        
+                            <img class="card-team__img" src="./img/box3.jpg" alt="робота з палітрою кольорів" />
+                        </picture>
                             <p class="work-thumb__content">
                                 Дизайнерські рішення
                             </p>
@@ -214,9 +232,9 @@
 
                 </ul>
             </div>
-        </section> -->
+        </section>
             <!-- team section-->
-        <!-- <section class="team section ">
+        <section class="team section ">
             <div class="container  ">
                 <h2 class="team__title title">Наша команда</h2>
 
@@ -463,9 +481,9 @@
                     </li>
                 </ul>
             </div>
-        </section> -->
+        </section>
             <!-- client section-->
-        <!-- <section class="client section ">
+        <section class="client section ">
             <div class="container">
                 <h2 class="client-title title">Постійні клієнти</h2>
                 <ul class="client list">
@@ -513,11 +531,11 @@
                     </li>
                 </ul>
             </div>
-        </section> -->
+        </section>
     </main>
 
     <!--Footer-->
-    <!-- <footer class="footer">
+    <footer class="footer">
         <div class="container container--footer">
             <div class="contacts">
                 <a class="contacts__web-studio" lang="en" href="WebStudio"> <span class="contacts__web web--color-btx">Web</span>Studio</a>
@@ -570,6 +588,7 @@
             </div>
             <div class="mailing">
                 <p class="mailing__info">Підпишіться на розсилку</p>
+                <div class="mailing-thumb">
                 <form class="mailing-form">
                     <input type="email" class="mailing-form__input" name="user-E-mail" placeholder="E-mail" required
                         id="user-email" />
@@ -579,13 +598,14 @@
                         </svg>
                     </button>
                 </form>
+                </div>
             </div>
 
         </div>
-    </footer> -->
+    </footer>
 
                   <!--Window-->
-<!-- 
+
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button type="button" class="modal__close" data-modal-close>
@@ -644,7 +664,7 @@
                 <button class="modal-button btn--feature" type="submit">Відправити </button>
             </form>
         </div>
-    </div> -->
+    </div>
     <script src="./js/modal.js"></script>
     <script src="./js/menu.js"></script>
 </body>

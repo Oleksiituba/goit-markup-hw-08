@@ -2,7 +2,6 @@
     border-bottom: 1px solid  var(--header--border--color);
 .header--container {
         display: flex;
-      
         align-items: center;
     }
 }
@@ -17,13 +16,14 @@
     color: var(--logo--title--color);
     padding-top: 26px;
     padding-bottom: 26px;
-    margin-right: 93px;
+    margin-right: 88px;
 
     @include desktop {
         font-weight: 700;
             font-size: 26px;
             line-height: 1.19;
             letter-spacing: 0.03em;
+            margin-right: 93px;
     }
     
 }
@@ -31,7 +31,8 @@
     display: none;
     @include tablet {
             display: flex;
-            align-items: center
+            align-items: center;
+            width:100%;
         }
                 @include desktop {
                     display: flex;
@@ -79,10 +80,9 @@
         }
 }
 .connect{
-
+margin-left: auto;
     
     &__list {
-        margin-left: auto;
     @include desktop {
             display: flex;
             align-items: center;
@@ -149,7 +149,6 @@
 }
 .menu-open{
     margin-left: auto;
-    display: grid;
     background-color: var(--second-title-color);
     &__icon {
             fill: var(--logo--title--color);
@@ -258,6 +257,8 @@
         letter-spacing: 0.02em;
         color: var(--text-title--color);
         padding: 16px 0;
+        display: flex;
+            flex-wrap: wrap;
         
 }
 .menu-soc__list{
