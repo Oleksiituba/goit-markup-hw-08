@@ -25,7 +25,7 @@
     <header class="header">
         <div class="container container-flex header--container">
             <a class="header__logo" lang="en" href="WebStudio"> <span class="logo__web web--color-btx">Web</span>Studio</a>
-
+<div class="header-menu">
             <nav class="navigation">
                 <ul class="navigation__list">
                     <li class="navigation__item"> <a href="index.html" class="navigation__link current">Студія</a></li>
@@ -36,17 +36,17 @@
            <div class="connect header__connect">
              <ul class="connect__list">
                  <li class="connect__item">
-                    <a class="connect__link" href="tell:+380961111111"> <svg class="connect__icon" width="16"
-                            height="16">
-                            <use href="./img/symbol.svg#icon-mail"></use>
+                    <a class="connect__link" href="tell:+380961111111"> <svg class="connect__icon icon-tell" >
+                            <use href="./img/symbol.svg#icon-tell"></use>
                         </svg> +38 096 111 11 11</a>
                  </li>
 
                  <li class="connect__item"><a class="connect__link link_mail"
-                        href="mail:info@devstudio.com"> <svg class="connect__icon" width="16" height="16">
-                            <use href="./img/symbol.svg#icon-tell"></use>
+                        href="mail:info@devstudio.com"> <svg class="connect__icon icon-mail" >
+                            <use href="./img/symbol.svg#icon-mail"></use>
                         </svg> info@devstudio.com</a></li>
               </ul>
+            </div>
             </div>
             <button class="menu-open" type="button" >
                 <svg class="menu-open__icon" width="40" height="40">
@@ -55,7 +55,7 @@
             </button>
         </div>
                     <!--Mob--menu-->
-        <div class="mob-menu">
+        <div class="mob-menu is-hidden">
            <div class="container">
             <div class="mob-menu-top">
 <button type="button" class="menu-close" data-mob-menu__close>
@@ -72,8 +72,8 @@
 </nav>
 </div>
 <div class="mob-menu-bottom">
-<div class="menu-connect header__connect">
-    <ul class="menu-connect__list">
+
+    <ul class="menu-connect">
         <li class="menu-connect__item">
             <a class="menu-connect-tell"
              href="tell:+380961111111">+38 096 111 11 11</a>
@@ -83,7 +83,7 @@
              href="mail:info@devstudio.com">info@devstudio.com</a>
             </li>
             </ul>
-            </div>
+            
    <div class="menu-soc">
   <ul class="menu-soc__list">
 <li class="menu-soc__item">
@@ -517,7 +517,7 @@
     </main>
 
     <!--Footer-->
-    <footer class="footer">
+    <!-- <footer class="footer">
         <div class="container container--footer">
             <div class="contacts">
                 <a class="contacts__web-studio" lang="en" href="WebStudio"> <span class="contacts__web web--color-btx">Web</span>Studio</a>
@@ -582,7 +582,7 @@
             </div>
 
         </div>
-    </footer>
+    </footer> -->
 
                   <!--Window-->
 <!-- 
