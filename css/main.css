@@ -76,6 +76,7 @@ body {
   font-family: "Roboto", sans-serif;
   background-color: var(--second-title-color);
   color: var(--first-title-color);
+  max-width: 1600px;
 }
 
 .is-hidden {
@@ -373,11 +374,13 @@ button {
   z-index: 2;
   width: 100vw;
   height: 100vh;
+  max-width: 767px;
   background-color: var(--second-title-color);
   top: 0;
   padding-top: 48px;
   padding-bottom: 48px;
   padding-left: 40px;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .mob-menu > .container {
   display: flex;
@@ -393,14 +396,12 @@ button {
   top: 10px;
   width: 30px;
   height: 30px;
-  border: 1px solid var(--modal--color--back);
   margin-bottom: 8px;
-  border-radius: 50%;
   background-color: transparent;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(-logo--title--color);
+  color: var(--first-title-color);
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -431,6 +432,10 @@ button {
   color: var(--btx-color--bg);
 }
 
+.current-menu {
+  color: var(--btx-title--color);
+}
+
 .menu-connect {
   margin-bottom: 64px;
 }
@@ -459,6 +464,7 @@ button {
 .menu-soc__list {
   display: flex;
   justify-content: left;
+  flex-wrap: wrap;
 }
 
 .menu-soc__item:not(:last-child) {
@@ -669,7 +675,7 @@ button {
 }
 @media screen and (min-width: 1200px) {
   .work {
-    display: inline;
+    display: block;
   }
 }
 
@@ -815,23 +821,22 @@ button {
 }
 
 .container--footer {
-  display: flex;
+  align-items: center;
   text-align: center;
   flex-direction: column;
-}
-@media screen and (min-width: 768px) {
-  .container--footer {
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-items: baseline;
-  }
 }
 @media screen and (min-width: 1200px) {
   .container--footer {
     flex-wrap: nowrap;
     text-align: start;
     display: flex;
-    align-items: baseline;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .cont-soc-thumb {
+    margin-bottom: 60px;
+    display: flex;
   }
 }
 
@@ -841,8 +846,15 @@ button {
 @media screen and (min-width: 768px) {
   .contacts {
     flex-basis: 50%;
+    margin-bottom: 0;
   }
 }
+@media screen and (min-width: 1200px) {
+  .contacts {
+    margin-bottom: 0;
+  }
+}
+
 .contacts__web-studio {
   font-family: "Raleway";
   font-weight: 700;
@@ -896,6 +908,13 @@ button {
 @media screen and (min-width: 768px) {
   .socials {
     flex-basis: 50%;
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .socials {
+    margin-bottom: 0;
+    align-items: flex-start;
   }
 }
 .socials__info {
@@ -925,22 +944,19 @@ button {
   fill: currentColor;
 }
 
-.mailing {
-  margin: auto;
-}
 @media screen and (min-width: 768px) {
   .mailing {
-    flex-direction: column;
-    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
     width: 100%;
     flex-basis: 50%;
-    margin: auto;
   }
 }
 @media screen and (min-width: 1200px) {
   .mailing {
     flex-basis: 100%;
-    margin: 0;
+    margin-left: auto;
+    text-align: start;
   }
 }
 .mailing__info {
@@ -950,7 +966,6 @@ button {
   font-weight: 700;
   color: var(--second-title-color);
   text-transform: uppercase;
-  margin-bottom: 20px;
 }
 
 .mailing-form__input {
@@ -969,6 +984,7 @@ button {
   transition-property: border-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  margin-top: 20px;
   margin-bottom: 20px;
 }
 @media screen and (min-width: 480px) {
@@ -979,6 +995,7 @@ button {
 @media screen and (min-width: 1200px) {
   .mailing-form__input {
     width: 358px;
+    margin-bottom: 0;
   }
 }
 .mailing-form__input::placeholder {
@@ -995,7 +1012,11 @@ button {
   justify-content: center;
   box-shadow: 0px 4px 4px var(--mailing-btn--color);
   padding: 10px 28px;
-  margin-left: 12px;
+}
+@media screen and (min-width: 1200px) {
+  .mailing-form__btn {
+    margin-left: 12px;
+  }
 }
 
 .mailing-form__btn-icon {
@@ -1078,7 +1099,9 @@ button {
 }
 
 .card-project {
-  display: block;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
   cursor: pointer;
   transition-property: box-shadow;
   transition-duration: 250ms;
@@ -1115,6 +1138,7 @@ button {
 }
 
 .card-content {
+  flex-grow: 1;
   padding: 20px 24px;
   border-left: 1px solid var(--card--content--color);
   border-right: 1px solid var(--card--content--color);
@@ -1147,7 +1171,7 @@ button {
 
 .modal {
   background-color: var(--second-title-color);
-  width: 320px;
+  width: 432px;
   min-height: 609px;
   border-radius: 4px;
   position: absolute;
@@ -1296,8 +1320,9 @@ button {
 }
 
 .check {
+  display: inline-block;
   font-weight: 400;
-  font-size: 7px;
+  font-size: 12px;
   line-height: 1;
   letter-spacing: 0.03em;
   color: var(--text-title--color);

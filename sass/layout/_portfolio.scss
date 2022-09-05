@@ -62,6 +62,7 @@
 }
 .menu-project__item{
    width: 100%;
+   
     @include tablet {
             max-width: calc((100% - 30px) / 2);
     
@@ -75,7 +76,9 @@
 
 
 .card-project {
-    display: block;
+    height: 100%;
+    display:flex;
+    flex-direction: column;
     cursor: pointer;
     transition-property: box-shadow;
     transition-duration: 250ms;
@@ -115,6 +118,8 @@
 }
 
 .card-content {
+    flex-grow: 1;
+ 
     padding: 20px 24px;
     border-left: 1px solid var(--card--content--color);
     border-right: 1px solid var(--card--content--color);

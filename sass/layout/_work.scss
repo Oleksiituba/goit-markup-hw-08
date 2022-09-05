@@ -2,7 +2,7 @@
 .work{
     display: none;
     @include desktop{
-        display: inline;
+        display: block;
     }
 }
 .work__list {

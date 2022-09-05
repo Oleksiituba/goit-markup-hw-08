@@ -9,7 +9,7 @@
 }
 .modal {
     background-color: var(--second-title-color);
-    width: 320px;
+    width: 432px;
     min-height: 609px;
     border-radius: 4px;
     position: absolute;
@@ -146,11 +146,13 @@
 
 .checkbox {
     margin-bottom: 30px;
+    
 }
 
 .check {
+    display: inline-block;
     font-weight: 400;
-    font-size: 7px;
+    font-size: 12px;
     line-height: 1;
     letter-spacing: 0.03em;
     color: var(--text-title--color);
@@ -159,6 +161,7 @@
     justify-content: center;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+   
    @include mobile {
     font-size: 12px;
         line-height: 1;
@@ -176,6 +179,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            
              .checkbox__input:checked + & {
                     background-color: var(--btx-title--color);
                     border: none;

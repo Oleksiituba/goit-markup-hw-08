@@ -173,11 +173,14 @@ margin-left: auto;
     z-index: 2;
     width: 100vw;
     height: 100vh;
+    max-width: 767px;
     background-color: var(--second-title-color) ;
     top: 0;
     padding-top: 48px;
     padding-bottom: 48px;
     padding-left: 40px;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+            visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
     > .container {
         display: flex;
@@ -195,14 +198,13 @@ margin-left: auto;
         top: 10px;
         width: 30px;
         height: 30px;
-        border: 1px solid var(--modal--color--back);
+        
         margin-bottom: 8px;
-        border-radius: 50%;
         background-color: transparent;
         display: flex;
         align-items: center;
         justify-content: center;
-        color: var(-logo--title--color);
+        color: var(--first-title-color);
         transition-property: color;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -234,7 +236,9 @@ margin-left: auto;
                 color: var(--btx-color--bg);
             }
 }
-
+.current-menu {
+    color: var(--btx-title--color);
+}
 .menu-connect {
     margin-bottom: 64px;
 }
@@ -264,6 +268,7 @@ margin-left: auto;
 .menu-soc__list{
     display: flex;
     justify-content: left;
+    flex-wrap: wrap;
     
     
 }
