@@ -39,11 +39,10 @@
                     align-items: center
                 }
 }
-.navigation__list {
-    display: flex;
-   
-    
+.navigation__item{
+display: inline-block;
 }
+   
 .navigation__item:not(:last-child) {
     margin-right: 50px;
 }
@@ -95,18 +94,13 @@ margin-left: auto;
         letter-spacing: 0.02em;
         list-style: none;
         text-decoration: none;
-        color: var(--text-title--color);
-         padding-top: 5px;
-        padding-bottom: 5px;     
+        color: var(--text-title--color);     
         display: flex;
         align-items: center;
         transition-property: color;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-         @include desktop {
-            padding-top: 32px;
-                padding-bottom: 32px;
-         }
+         
         &:hover,
         &:focus {
             color: var(--btx-title--color);
@@ -123,13 +117,33 @@ margin-left: auto;
         margin-right: 10px;
     }
 }
+.tell-con {
+@include tablet {
+        padding-top: 21px;
+        padding-bottom: 5px;
+    }
+        @include desktop {
+            padding-top: 32px;
+            padding-bottom: 32px;
+        }
+}
+ .mail-con{
+@include tablet{
+        padding-bottom: 21px;
+        padding-top: 5px;
+    }
+        @include desktop {
+            padding-top: 32px;
+            padding-bottom: 32px;
+        }
+}
 .icon-tell {
     fill: currentColor;
     @include tablet {
         width: 10px;
             height: 14px;
     }
- @include tablet {
+ @include desktop {
      width: 10px;
      height: 16px;
  }
@@ -142,7 +156,7 @@ margin-left: auto;
          height: 10px;
      }
 
-     @include tablet {
+     @include desktop {
          width: 16px;
          height: 12px;
      }

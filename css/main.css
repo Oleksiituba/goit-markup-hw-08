@@ -231,8 +231,8 @@ button {
   }
 }
 
-.navigation__list {
-  display: flex;
+.navigation__item {
+  display: inline-block;
 }
 
 .navigation__item:not(:last-child) {
@@ -289,19 +289,11 @@ button {
   list-style: none;
   text-decoration: none;
   color: var(--text-title--color);
-  padding-top: 5px;
-  padding-bottom: 5px;
   display: flex;
   align-items: center;
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-@media screen and (min-width: 1200px) {
-  .connect__link {
-    padding-top: 32px;
-    padding-bottom: 32px;
-  }
 }
 .connect__link:hover, .connect__link:focus {
   color: var(--btx-title--color);
@@ -318,6 +310,32 @@ button {
   margin-right: 10px;
 }
 
+@media screen and (min-width: 768px) {
+  .tell-con {
+    padding-top: 21px;
+    padding-bottom: 5px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .tell-con {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .mail-con {
+    padding-bottom: 21px;
+    padding-top: 5px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .mail-con {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}
+
 .icon-tell {
   fill: currentColor;
 }
@@ -327,7 +345,7 @@ button {
     height: 14px;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .icon-tell {
     width: 10px;
     height: 16px;
@@ -343,7 +361,7 @@ button {
     height: 10px;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .icon-mail {
     width: 16px;
     height: 12px;
@@ -823,7 +841,8 @@ button {
 .container--footer {
   align-items: center;
   text-align: center;
-  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
 }
 @media screen and (min-width: 1200px) {
   .container--footer {
@@ -944,17 +963,9 @@ button {
   fill: currentColor;
 }
 
-@media screen and (min-width: 768px) {
-  .mailing {
-    flex-basis: 50%;
-    width: 100%;
-  }
-}
 @media screen and (min-width: 1200px) {
   .mailing {
-    flex-basis: 100%;
     margin-left: auto;
-    text-align: start;
   }
 }
 .mailing__info {
@@ -964,11 +975,6 @@ button {
   font-weight: 700;
   color: var(--second-title-color);
   text-transform: uppercase;
-}
-
-.mailing-thumb {
-  display: flex;
-  flex-direction: column;
 }
 
 .mailing-form__input {
@@ -1015,7 +1021,6 @@ button {
   justify-content: center;
   box-shadow: 0px 4px 4px var(--mailing-btn--color);
   padding: 10px 28px;
-  margin-left: 12px;
 }
 @media screen and (min-width: 1200px) {
   .mailing-form__btn {
