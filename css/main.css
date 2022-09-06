@@ -854,6 +854,7 @@ button {
   .cont-soc-thumb {
     margin-bottom: 60px;
     display: flex;
+    justify-content: space-around;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -875,6 +876,7 @@ button {
 @media screen and (min-width: 1200px) {
   .contacts {
     margin-bottom: 0;
+    flex-basis: 100%;
   }
 }
 
@@ -938,6 +940,7 @@ button {
   .socials {
     margin-bottom: 0;
     margin-left: 70px;
+    flex-basis: 100%;
   }
 }
 .socials__info {
@@ -973,6 +976,7 @@ button {
   }
 }
 .mailing__info {
+  display: block;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
@@ -1020,15 +1024,17 @@ button {
 }
 
 .mailing-form__btn {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   justify-content: center;
   box-shadow: 0px 4px 4px var(--mailing-btn--color);
   padding: 10px 28px;
+  margin: auto;
 }
 @media screen and (min-width: 1200px) {
   .mailing-form__btn {
     margin-left: 12px;
+    display: inline-flex;
   }
 }
 
