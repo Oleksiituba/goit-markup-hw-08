@@ -839,14 +839,12 @@ button {
 }
 
 .container--footer {
-  align-items: center;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
 }
 @media screen and (min-width: 1200px) {
   .container--footer {
-    flex-wrap: nowrap;
     text-align: start;
     display: flex;
   }
@@ -855,6 +853,12 @@ button {
 @media screen and (min-width: 768px) {
   .cont-soc-thumb {
     margin-bottom: 60px;
+    display: flex;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .cont-soc-thumb {
+    margin-bottom: 0;
     display: flex;
   }
 }
@@ -933,7 +937,7 @@ button {
 @media screen and (min-width: 1200px) {
   .socials {
     margin-bottom: 0;
-    align-items: flex-start;
+    margin-left: 70px;
   }
 }
 .socials__info {
