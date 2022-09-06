@@ -845,8 +845,9 @@ button {
 }
 @media screen and (min-width: 1200px) {
   .container--footer {
-    text-align: start;
     display: flex;
+    text-align: left;
+    align-items: baseline;
   }
 }
 
@@ -860,7 +861,7 @@ button {
 @media screen and (min-width: 1200px) {
   .cont-soc-thumb {
     margin-bottom: 0;
-    display: flex;
+    align-items: baseline;
   }
 }
 
@@ -940,7 +941,8 @@ button {
   .socials {
     margin-bottom: 0;
     margin-left: 70px;
-    flex-basis: 100%;
+    flex-basis: 0;
+    align-items: stretch;
   }
 }
 .socials__info {

@@ -11,9 +11,10 @@ margin-right: auto;
             
         }
         @include desktop{
-            
-            text-align: start;
-                    display: flex;
+            display: flex;
+            text-align: left;
+            align-items: baseline;
+                    
                     
                 
         }
@@ -26,7 +27,7 @@ justify-content: space-around;
       }
     @include desktop {
          margin-bottom: 0;
-                display: flex;
+            align-items: baseline;
             }
     }
 
@@ -107,7 +108,8 @@ margin-bottom: 60px;
     @include desktop {
         margin-bottom: 0;
         margin-left: 70px;
-        flex-basis: 100%;
+        flex-basis: 0;
+        align-items: stretch;
        
     }
     &__info {
